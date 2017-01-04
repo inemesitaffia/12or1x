@@ -36,6 +36,9 @@
     <Reference Include="PowerCollections">
       <HintPath>..\..\..\..\..\Desktop\Sample apps code and libs\software libraries\PowerCollections\PowerCollections\Binaries\PowerCollections.dll</HintPath>
     </Reference>
+    <Reference Include="StaticRandom">
+      <HintPath>..\..\RechargeTester\gennumberstester\bin\Debug\StaticRandom.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +50,12 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ThreadLocalCryptoRandom">
+      <HintPath>..\..\ThreadLocalCryptoRandom\ThreadLocalCryptoRandom\bin\Release\ThreadLocalCryptoRandom.dll</HintPath>
+    </Reference>
+    <Reference Include="Verhoeff">
+      <HintPath>..\..\Verhoeff\Verhoeff\obj\Release\Verhoeff.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">

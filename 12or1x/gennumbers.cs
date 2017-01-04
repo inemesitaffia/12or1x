@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using StaticRandom;
 using Verhoeff;
 using Wintellect.PowerCollections;
-
+using ThreadLocalCryptoRandom;
 
 namespace _12or1x
 {
@@ -37,10 +37,7 @@ namespace _12or1x
 
             return d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10 + d11;
         }
-        static void Main(string[] args)
-        {
-
-        }
+        
     }
 
 
