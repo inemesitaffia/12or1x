@@ -14,7 +14,8 @@ namespace _12or1x
     {
         public static string genMyDigits()
         {
-            var numbers = StaticRandom.StaticRandom.Next().ToString();
+            
+            var numbers = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next().ToString();
             var generatedVerhoeff = Verhoeff.VerhoeffChecker.generateVerhoeff(numbers);
             //Console.WriteLine(numbers);
             int x = Convert.ToInt32(generatedVerhoeff);
@@ -40,17 +41,17 @@ namespace _12or1x
         public static string gen11Digits()
         {
 
-            var d1 = StaticRandom.StaticRandom.Next(0, 9).ToString();
-            var d2 = StaticRandom.StaticRandom.Next(0, 9);
-            var d3 = StaticRandom.StaticRandom.Next(0, 9);
-            var d4 = StaticRandom.StaticRandom.Next(0, 9);
-            var d5 = StaticRandom.StaticRandom.Next(0, 9);
-            var d6 = StaticRandom.StaticRandom.Next(0, 9);
-            var d7 = StaticRandom.StaticRandom.Next(0, 9);
-            var d8 = StaticRandom.StaticRandom.Next(0, 9);
-            var d9 = StaticRandom.StaticRandom.Next(0, 9);
-            var d10 = StaticRandom.StaticRandom.Next(0, 9);
-            var d11 = StaticRandom.StaticRandom.Next(0, 9);
+            var d1 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9).ToString();
+            var d2 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d3 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d4 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d5 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d6 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d7 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d8 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d9 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d10 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
+            var d11 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
 
             return d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10 + d11;
         }

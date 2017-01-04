@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12or1x", "12or1x\12or1x.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RechargeTester", "..\RechargeTester\RechargeTester\RechargeTester.csproj", "{D482344F-C196-4A08-B0B4-5F9EB20BDFC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadLocalCryptoRandom", "..\ThreadLocalCryptoRandom\ThreadLocalCryptoRandom\ThreadLocalCryptoRandom.csproj", "{B5884B0B-002F-407E-BDB7-3FF39E336F02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D482344F-C196-4A08-B0B4-5F9EB20BDFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D482344F-C196-4A08-B0B4-5F9EB20BDFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D482344F-C196-4A08-B0B4-5F9EB20BDFC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5884B0B-002F-407E-BDB7-3FF39E336F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5884B0B-002F-407E-BDB7-3FF39E336F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5884B0B-002F-407E-BDB7-3FF39E336F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5884B0B-002F-407E-BDB7-3FF39E336F02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
