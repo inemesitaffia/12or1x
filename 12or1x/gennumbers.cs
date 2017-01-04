@@ -12,6 +12,23 @@ namespace _12or1x
 {
     public class gennumbers
     {
+        public static string genMyDigits()
+        {
+            var numbers = StaticRandom.StaticRandom.Next().ToString();
+            var generatedVerhoeff = Verhoeff.VerhoeffChecker.generateVerhoeff(numbers);
+            //Console.WriteLine(numbers);
+            int x = Convert.ToInt32(generatedVerhoeff);
+            if ( x  % 2==0)
+            {
+                return "even";
+            }
+            else
+            {
+                return "odd";
+            }
+            //return  generatedVerhoeff;
+
+        }
         public static string genCheckedDigits()
         {
             var numbers = gen11Digits();
