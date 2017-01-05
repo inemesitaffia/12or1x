@@ -19,7 +19,9 @@ namespace _12or1x
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = (gennumbers.genMyDigits());
+            
+            label1.Text = gennumbers.genMyDigits();
+            label2.Text = StaticRandom.StaticRandom.Next().ToString();
         }
     }
 }
