@@ -14,12 +14,11 @@ namespace _12or1x
     {
         public static string genMyDigits()
         {
-            
             var numbers = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next().ToString();
             var generatedVerhoeff = Verhoeff.VerhoeffChecker.generateVerhoeff(numbers);
             //Console.WriteLine(numbers);
             int x = Convert.ToInt32(generatedVerhoeff);
-            if ( x  % 2==0)
+            if (x%2 == 0)
             {
                 return "even";
             }
@@ -28,19 +27,18 @@ namespace _12or1x
                 return "odd";
             }
             //return  generatedVerhoeff;
-
         }
+
         public static string genCheckedDigits()
         {
             var numbers = gen11Digits();
             var generatedVerhoeff = Verhoeff.VerhoeffChecker.generateVerhoeff(numbers);
-            Console.WriteLine(numbers);
+            //Console.WriteLine(numbers);
             return numbers + generatedVerhoeff;
-
         }
+
         public static string gen11Digits()
         {
-
             var d1 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9).ToString();
             var d2 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
             var d3 = ThreadLocalCryptoRandom.ThreadLocalCryptoRandom.Next(0, 9);
@@ -55,8 +53,5 @@ namespace _12or1x
 
             return d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10 + d11;
         }
-        
     }
-
-
 }
