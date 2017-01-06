@@ -17,17 +17,11 @@ namespace _12or1x
             InitializeComponent();
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            //await Task.Run(() => 
+            
             label1.Text = gennumbers.genMyDigits();
-            label2.Text = gennumbers.genCheckedDigits();
-           /* Parallel.Invoke(
-
-                );
-                */
-
+            label2.Text = StaticRandom.StaticRandom.Next().ToString();
         }
     }
 }
-    
