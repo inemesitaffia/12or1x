@@ -21,6 +21,7 @@ namespace _12or1x
         {
             label1.Text = gennumbers.genMyDigits();
             label2.Text = gennumbers.genCheckedDigits().ToString();
+            Text = label2.Text;
         }
     }
 }
